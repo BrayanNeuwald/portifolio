@@ -1,0 +1,140 @@
+/* Importa a fonte 'Inter' do Google Fonts para ser usada no projeto */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Define um conjunto de estilos globais para resetar margin, padding e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define variáveis para as cores utilizadas no projeto usando a metodologia de design tokens */
+:root {
+    /* Cor principal da marca */
+    --brand-color: #00D2DF;
+    /* Escala de cores escuras */
+    --dark-10: #121212;
+    --dark-20: #151515;
+    --dark-30: #C4C4C4;
+    --dark-40: #FFFFFF;
+    /* Sistema de cores */
+    --support-01: #2962FF;
+    --support-02: #0BB07B;
+    --support-03: #FFCE52;
+    --support-04: #F03D3D;
+    --support-05: #E0E0E0;
+}
+
+/*-----------------------  Área Header ---------------------- */
+
+/* Estilos para o cabeçalho (header) da página */
+/* Estilos para um cabeçalho (pode ser usado para o topo de uma página ou seção) */
+
+/* Utilização de flexbox para estruturar o cabeçalho */
+.cabecario {
+    display: flex;
+    justify-content: space-between;
+    /* Distribui o espaço disponível entre os elementos do cabeçalho */
+    align-items: center;
+    /* Centraliza verticalmente os elementos do cabeçalho */
+    background-color: var(--dark-20);
+    /* Cor de fundo do cabeçalho, utilizando variável definida no root */
+    padding: 0 20px;
+    /* Adaptação do espaçamento interno conforme necessário */
+    height: 110px;
+    /* Altura fixa do cabeçalho */
+}
+
+/*
+  Estes estilos são projetados para um cabeçalho que pode ser utilizado no topo de uma página ou seção.
+  A propriedade 'display: flex' é usada para criar um contêiner flexível para os elementos do cabeçalho.
+  'justify-content: space-between' distribui o espaço disponível entre os elementos do cabeçalho,
+  criando um espaçamento uniforme entre eles.
+  'align-items: center' centraliza verticalmente os elementos do cabeçalho dentro do contêiner flexível.
+
+  'background-color' define a cor de fundo do cabeçalho, utilizando uma variável definida no root para
+  facilitar a manutenção e consistência de cores em todo o projeto.
+
+  'padding' adiciona espaçamento interno ao cabeçalho, ajustável conforme necessário.
+
+  'height' define uma altura fixa para o cabeçalho, mas pode ser ajustada conforme necessário para atender
+  aos requisitos de design.
+
+  Esses estilos fornecem uma estrutura básica para um cabeçalho, podendo ser personalizados para atender
+  às necessidades específicas de layout e design.
+*/
+
+/* Estilos para o logo no cabeçalho */
+#logo {
+    color: #00D2DF;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 150px;
+    /* Adaptação do valor conforme necessário */
+}
+
+/* Estilos para a navegação (links) no cabeçalho */
+/* Estilos para um bloco de links (pode ser usado para navegação, lista de itens, etc.) */
+
+/* Utilização de flexbox para alinhar os links horizontalmente no bloco */
+.links {
+    display: flex;
+    /* torna o bloco flex */
+    justify-content: space-around;
+    /* cria um espaço entre os itens */
+    align-items: center;
+    /* alinha os itens ao centro */
+    color: #C4C4C4;
+    /* Cor do texto dos links */
+    font-family: 'Inter', sans-serif;
+    /* Utilização da fonte 'Inter' */
+    font-size: 18px;
+    /* Tamanho do texto dos links */
+    font-weight: 500;
+    /* Peso da fonte dos links */
+    line-height: normal;
+    /* Altura da linha normal */
+    text-decoration: none;
+    /* Remoção do sublinhado padrão dos links */
+    list-style-type: none;
+    /* Remoção do marcador de lista padrão para links dentro do bloco */
+}
+
+/* 
+  Estes estilos são projetados para um bloco de links que pode ser utilizado para navegação ou lista de itens.
+  A propriedade 'display: flex' é usada para alinhar os links horizontalmente.
+  'justify-content: space-around' distribui o espaço disponível ao redor dos links.
+  'align-items: center' centraliza verticalmente os links dentro do bloco.
+
+  As propriedades de estilo como 'color', 'font-family', 'font-size', 'font-weight', 'line-height',
+  'text-decoration', e 'list-style-type' definem a aparência dos links no bloco.
+
+  Esses estilos criam uma base limpa para um bloco de links, e podem ser personalizados conforme necessário
+  para atender aos requisitos específicos de design.
+*/
+
+
+/* Estilos para os links de navegação */
+.links a {
+    margin-right: 8em;
+    /* Utilização de unidade relativa para margem */
+    text-decoration: none;
+    /* retira o sublinhado */
+    color: var(--dark-30);
+    /* cor do link /*
+    cursor: pointer; /* Adição de um cursor indicando que o elemento é clicável */
+}
+
+/* Estilos para os links de navegação ao passar o mouse sobre eles */
+.links a:hover {
+    color: var(--brand-color);
+    /* Alteração da cor ao passar o mouse */
+    transition: color 0.3s ease, border-color 0.3s ease;
+    /* Adição de uma transição suave na mudança de cor */
+}
+
+
+/*-----------------------  Área Home ---------------------- */
+
